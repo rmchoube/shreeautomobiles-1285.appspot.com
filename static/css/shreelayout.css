@@ -1,0 +1,355 @@
+*{margin:0px;padding:0px;}
+html{height:100%;}
+body{font-family: 'Roboto',sans-serif;height:100%;
+      /* padding-top: 70px;  */font-size: 1.4em;
+     color:#333;}
+
+.headingText{position:absolute;
+			top:300px;
+			left:40px;
+			color: #fff;}
+
+.headingText h2{font-family:'Roboto Condensed',sans-serif;
+			    letter-spacing: 0.2em;font-size: 2.3em;}
+
+.headingText p{font-family:'Roboto',sans-serif;
+			   font-size: 1.2em;
+			   letter-spacing: 0.1em;}
+h2{letter-spacing: 0.1em;
+		     font-weight: 700;
+		     font-family:'Roboto Condensed',sans-serif;}
+h4{
+	font-family:'Roboto Condensed',sans-serif;
+  }
+  p{font-size:15px;font-family:'Roboto',sans-serif; }
+
+.row{margin-top: 80px;}
+
+#navigationBar{transition:all 0.3s ease-in-out 0s;
+				 background-color:transparent;
+	    		border-color: transparent;
+	    		 }     /*===========navbar effect===============*/
+
+#brandimg{transition:all 0.3s;
+	      height:100px;width:auto;z-index: 3;}    /*===========shrink logo===============*/
+
+
+
+.navbar-default{height:100px;
+	            background-color:transparent;
+	      		border-color: transparent;
+	            margin-bottom: 10px;
+	         }
+
+
+.navbar-default .navbar-nav>li> a{color: #fff;
+	                               text-align: center;
+									padding-bottom:0;
+									padding-right:15px; 
+									font-family: 'Roboto',sans-serif;
+							 		font-size: 1.1em;
+							 		letter-spacing: 0.1em;}
+
+/*  .navbar-default .navbar-nav>li>a:visited {color:#fff;}  */ 
+
+  .navbar-default .navbar-nav>li>a:hover {color:#fff;}
+
+ a:active{color: #f97352;
+		 background-color: transparent;
+		 border-color:transparent;}
+
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus{color: #f97352;
+										   background-color: transparent;
+										   border-color:transparent;}
+
+.navbar-default .navbar-nav>.active>a:hover{color: #f97352;
+											 background-color: transparent;}  
+
+
+
+
+
+
+
+
+
+
+/* =====underline hover effect below */
+
+.underline-hover li> a{
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+.underline-hover li> a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	color:#f97352;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.underline-hover li> a:hover:after {
+	width: 100%;
+	background: #f97352;
+	color:#f97352; 
+}
+
+
+/* ==========end effect==============*/
+
+
+.navbar-right{padding-top: 30px;
+			  padding-right: 55px;}
+
+
+/* ===============below section is for mobile nav bg color========================== */
+.navbar-collapse{background-color: transparent;
+				 overflow-x:hidden; }/*overflow hidden is becoz 
+                                                                     its blink horizontal scrollbar 
+                                                                     on click on productmenu */
+
+.navbar-default .navbar-collapse{border-color:transparent;}
+ 
+@media screen and (max-width: 768px) { body,h3{font-size: 1.3em;}
+                                        h2{font-size: 1.6em;}
+
+										.navbar-collapse{background-color: rgba(3,2,18,1);
+														/* vertical-align: middle; */
+														text-align: center;
+                                                        margin-top: 20px;
+													}
+                                                      .navbar-right {padding: 0; }
+									 }
+
+@media screen and (max-width: 768px) {.navbar-collapse .collapse.in{overflow-x: hidden;position: absolute;left: -15px;}
+                                       button.navbar-toggle{position:absolute;right: 30px;top:20px;margin-right: 0px;}
+                                      } /*this is for when i click on product menu in mob.
+                                          this will set the position of menu button and hide
+                                           overflow of open menu  */
+
+@media screen and (max-width: 768px) {
+										.products{border-bottom:1px solid #888;
+												  padding-bottom: 15px;
+												}
+									} 	/* this is for seperating product in mobile */    
+
+@media screen and (max-width: 768px) {
+										#brandimg{max-height: 50px;
+												  width:auto;z-index: 3;
+												  }
+									  }/*scale down the heightof logo*/
+
+button.navbar-toggle.collapsed {border-radius: 0px;
+								color:#fff;
+								background-color:#f97352; 
+								}
+
+button.navbar-toggle.collapsed:visited {border-radius: 0px;
+										color:#fff;
+									 background-color:rgba(3,2,18,1); 
+									   }
+
+button.navbar-toggle.collapsed:hover{border-radius: 0px;
+									 color:#fff;
+									 background-color:#f97352;
+									 }
+
+button.navbar-toggle{border-radius: 0px;
+					 color: #fff;background-color: #f97352;
+					}
+
+.navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{background-color: rgba(3,2,18,1); 
+																		  color:#fff;}
+.navbar-default .navbar-toggle{border-color: #f97352;}
+
+/* ============================= */
+
+ .parallax-window {min-height: 700px;
+                  background: transparent;}	/*====parallex effect======*/	
+
+.well-lg{background-color: transparent;
+ 		 border: transparent;
+ 		} 
+
+.thumbnail{border-color: transparent;
+	       text-align: center;
+	       margin-bottom: 0px;
+	      }
+
+.products h3{text-align: center;
+			 margin-top: 0px;
+			 margin-bottom: 50px;
+			 letter-spacing: 0.1em;
+			 font-size:2em ;
+		     font-weight: 700;
+		     font-family:'Roboto Condensed',sans-serif;
+		    }
+
+.RTtext{margin-top:20px;}
+
+.LText{ padding-top: 50px;}
+
+@media screen and (min-width: 768px){
+									  .RTimg,.LFTimg{padding-top: 40px;
+									  				 margin:0px auto;
+									  				}
+ 									}
+                                   
+@media screen and (min-width: 768px){ 
+									  .ebattries{ margin:0px auto;
+									              padding-top:80px;
+									            }
+                                     } /*to set battry img in vertical and horiztol center for laptop*/
+                                     
+@media screen and (max-width: 768px){.table-responsive{padding-left:10px;}
+									  .ebattries{ margin:0px auto;
+									   			}
+									  .ebatriDetail{padding: 10px;}
+									
+									} /*to set battri img in centerfor mobile*/
+
+.btn-lg{background-color: #f97352;
+        border-color: #f97352;
+        font-size: 14px;
+        padding:16px 27px;
+        border-radius: 0px;
+        color:#fff;}
+
+@media screen and (max-width: 768px){
+									  .btn-lg { 
+									  	        background-color: #f97352;
+       										    border-color: #f97352;
+        										padding:12px 20px;
+										        border-radius: 0px;
+    											color:#fff;
+    										  }
+    								}
+
+.btn{word-spacing: 1px;
+	border-width:2px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border-radius: 0;}
+
+
+
+.btn:hover{color:#fff;
+		   background-color: #000;
+		   border-color: #000;
+		   transition:all 0.2s ease-in-out 0s;}
+
+.table-responsive{padding-bottom:41px;
+				  border: 0px;
+				 }/* vertical-align: middle;}*/
+
+/* margin-left: 80px;margin-top: 20px; */
+.ebatriDetail{padding-bottom: 40px;}
+ 
+
+/* ============below effect for scroll down arrow ============= */
+.float-icon{z-index:3;
+			margin:auto;
+			text-align: center;
+			position:relative;
+			top:-120px;
+			font-size:2em;
+			color:#fff;
+           -moz-animation: float-icon 2s infinite;
+           -webkit-animation: float-icon 2s infinite;
+           animation: float-icon 2s infinite; 
+          }
+
+	   @-moz-keyframes float-icon{
+	                              0%, 20%,  100% {
+												   -moz-transform: translateY(0);
+												   transform: translateY(0);
+	                                              }
+	 										 40% {
+												   -moz-transform: translateY(-5px);
+												   transform: translateY(-5px);
+	  											 }
+											 60% {
+											       -moz-transform: translateY(15px);
+											       transform: translateY(15px);
+											     }
+	                            }
+
+	@-webkit-keyframes float-icon {
+								    0%, 20%,  100% {
+													 -webkit-transform: translateY(0);
+												     transform: translateY(0);
+													}
+											   40% {
+												     -webkit-transform: translateY(-5px);
+												     transform: translateY(-5px);
+												   }
+											  60% {
+												    -webkit-transform: translateY(15px);
+												    transform: translateY(15px);
+												  }
+								  }
+
+	@keyframes float-icon {
+							0%, 20%, 100% {
+										    -moz-transform: translateY(0);
+										    -ms-transform: translateY(0);
+										    -webkit-transform: translateY(0);
+										    transform: translateY(0);
+							              }
+									  40% {
+										    -moz-transform: translateY(-5px);
+										    -ms-transform: translateY(-5px);
+										    -webkit-transform: translateY(-5px);
+										    transform: translateY(-5px);
+									      }
+									  60% {
+										    -moz-transform: translateY(15px);
+										    -ms-transform: translateY(15px);
+										    -webkit-transform: translateY(15px);
+										    transform: translateY(15px);
+										  }
+						  }
+
+
+
+
+#escot-modal-lg{top:8%;right:50%;}
+	.modal-dialog{width:90%;} 
+	.close{color:#fff;opacity: .8;}
+    .smallmodule .modal-dialog{width: 40%;}
+    .smallmodule .bootstrap-dialog-message{font-size: 1.4em;}
+
+
+.bootstrap-dialog.type-primary .modal-header {
+    background-color: #333;
+}
+
+label{padding-top: 15px;padding-bottom: 15px;}
+#branchselection{height:75;padding:5px ;margin-bottom:40px}
+
+
+
+
+
+footer {background-color:  #f97352;
+	    color:#fff;
+	    font-size:15px;
+	    font-family:'Roboto',sans-serif;
+	   }
+
+h5 {font-size:1.2em ;
+	letter-spacing: .1em;
+ 	font-weight: 700;
+    font-family:'Roboto Condensed',sans-serif;
+   }
+footer .container{padding-top: 30px;margin-top: 200px;}
+
+@media screen and (max-width: 768px){
+	                                   .multiMap{overflow: hidden;width:300px;height:200px;padding: 0;display:flex;
+	                                   	align-items:center;justify-content:center; }
+	                               }

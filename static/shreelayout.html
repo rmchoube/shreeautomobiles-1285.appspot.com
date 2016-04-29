@@ -1,0 +1,690 @@
+<!doctype html>
+
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 	Bootstrap -->
+	
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+     <link href="css/bootstrap-dialog.css" rel="stylesheet">
+              <!-- ==custom css== -->
+	 <link href="css/shreelayout.css" rel="stylesheet">  
+
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+     <script src="js/bootstrap-dialog.js"></script>
+<script src="js/shreelayout.js"></script><!--=====custom javascript=======-->
+
+	<title>Shree Automobiles</title>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+	<!--<script src="https://code.jquery.com/jquery.js"></script>--><!--remove this comment if needed-->
+
+	<script src="js/parallax.js"></script>
+	<script>$('.parallax-window').parallax({imageSrc: 'back-img-Header.png'});</script><!-- headerimage-shreeautomobile.png -->
+                 
+                 <!-- ============slide in effect=============== -->
+	<!--<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>-->
+
+	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+
+	<script src="js/jquery.scrollSlide.js"></script>
+
+
+<!-- ===============below code for navigation bar and logo shrink effect================ -->
+
+<script>
+
+function Scroll(){
+    var top = document.getElementById('navigationBar');
+    var brand = document.getElementById('brandimg');
+    
+    var ypos = window.pageYOffset;
+   
+
+    if (ypos < 120) {
+    	// make the nav background transperent
+        top.style.height = "100px";
+	    top.style.background = "Transparent";
+	    brand.style.height ="100px";
+	    brand.style.width ="auto";
+        
+        // make "Home" active
+        $('.one').addClass("active");
+        $('.two').removeClass("active");
+    } else if((ypos > 120) && (ypos <= 750)) {
+    	// reduce the size of logo
+	    top.style.height = "85px";
+	    brand.style.height ="70px";
+	    brand.style.width ="auto";
+        top.style.background = "#030212";
+    } else if(ypos >= 750) {
+    	// make "Product" active
+	    $('.one').removeClass("active");
+        $('.two').addClass("active"); 
+        top.style.height = "85px";
+	    brand.style.height ="70px";
+	    brand.style.width ="auto"; 
+         top.style.background = "#030212";/*add this again becoz when clicking on product or back arrow on browser from contact page it shows transperant nav bar so to add background color*/
+    }
+}
+	window.addEventListener("scroll",Scroll);
+
+	</script>
+
+	
+ <div class="container-fluid">
+		
+	<nav id="navigationBar" class="navbar  navbar-default navbar-fixed-top underline-hover">
+		<div class="container-fluid">
+			<div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false"><!-- collapsed --> 
+               		
+			        <span class="sr-only">Toggle navigation</span>
+			        <span>Menu</span>
+			        <!-- <span class="icon-bar"></span>
+			        <span class="icon-bar"></span> -->
+      			</button>
+
+      			 <a class="navbar-brand brand-img-smaller"  href="#">
+					<img id="brandimg" alt="logoimg" src="img/REVERSE-LOGO.png" 
+					class="img-responsive"><!-- width="100%" height="auto" --> 
+		        </a>
+
+			</div>	<!--navheader end-->
+
+			<div class="navbar-collapse collapse " id="myNavbar">
+				<ul class="nav navbar-nav navbar-right"  >
+					<li class="one active" ><a data-toggle="collapse"  data-target=".in" href="#header">Home</a></li>
+					<li class="two"><a data-toggle="collapse" data-target=".in" href="#varity_product">Product</a></li>
+				<!-- id="changecolor" -->
+
+					<li class="three"><a href="Service_Pg-Shree.html">Service</a></li> 
+					<li class="four"><a href="shree_Contact_Us.html">Contact us</a></li> 
+					
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+</div>
+
+<header id="header">
+	<div class="parallax-window img-responsive" data-parallax="scroll" data-image-src="img/back-img-Header.png"><!-- headerimage- HeaderImg.png
+				shreeautomobile.png -->
+		
+	</div> <!-- width="100%" height="auto" -->
+	
+	<div class="headingText">
+		<h2>Plug into Electric<br> Revolution.</h2><br>
+		<p>No License <br>No Registration<br> No Petrol <br>No Pollution</p>
+	</div>
+	<div class="container float-icon">
+	<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+</div>
+</header>
+	
+
+
+<!-- id productcontaint below is given to link this from contact us page.otherwise it will show transperant navigation -->
+
+<div id="productcontaint" class="container">
+	<div class="well well-lg">
+	<h3 id="varity_product">
+		We are dealer of E-Bikes, E-Rickshawa, E-Battries and provide services.
+	</h3>
+	<p style="font-size: 1.2em;">
+		we bring forth a range of high-performance Avon Electric Bikes for the market accross the country. We are one of the acknowledged Suppliers of Avon E-Bikes in Akola District.we have our vibrant showroom branches in Akola, Amravati, Khandawa, Hydrabad and Nagpur.At its core ,Shree Automobiles has always centered on commitment to our costomers through our careful selection of technology,our top-notch service,our very high standards and our unwavering optimism for the future of transportation and electric bikes in India. 
+		
+	</p></div><br><br>
+
+	<h2>Products</h2>
+
+ <div  class="row">
+	<div class="col-sm-6 col-md-3">
+    	<div class="thumbnail ">
+			<img alt="estar" src="img/Estarmini.png" width="190" height="173" >
+		 	<div class="caption">
+	        <h4>E-Star bike</h4>
+	        <p>...</p>
+	        
+     	 	</div>
+   		 </div>
+  	</div>
+
+	<div class="col-sm-6 col-md-3">
+    	<div class="thumbnail ">
+			<img alt="ebikevx" src="img/ebikeVXmini.png" width="250" height="173" >
+	 		<div class="caption">
+       		 <h4>E-Bike VX</h4>
+       		 <p>...</p>
+        
+     	 	</div>
+    	</div>
+  	</div>
+
+	<div class="col-sm-6 col-md-3">
+   		 <div class="thumbnail" >
+				<img alt="rickshaw" src="img/rickshawmini.png" width="280" height="158" >
+	 			<div class="caption" style="padding-top:22px">
+       		 	<h4>E-Rickshaw</h4>
+        		<p>...</p>
+        
+     		 	</div>
+   		 </div>
+ 	 </div>
+
+
+	<div class="col-sm-6 col-md-3">
+    	<div class="thumbnail">
+			<img alt="battries" src="img/battrie.png" width="150" height="138">
+	 		<div class="caption" style="padding-top:42px">
+	        	<h4>E-Battries</h4>
+	        	<p>...</p>
+        
+      		</div>
+    	</div>
+  	</div>
+
+ </div> <!-- row close -->
+</div><!--container closed-->
+
+<!-- ======================DISPLAY OF PRODUCT STARTS========================= -->
+
+<div class="container" style="height:5200">
+
+<!--========================================E SCOOT=================================-->
+
+ <div class="row products">
+
+ 	<div  class=" col-sm-6 col-md-7 LFTimg ">
+ 		<img alt="escoot" src="img/e-scoot.png" width="600" height="491" class="img-responsive slide-left-1000"/>
+ 	</div>
+
+ 	<div class="col-sm-6 col-md-5 RTtext slide-right-1000">
+ 		<h3>E Scoot</h3>
+ 		<div class="table-responsive">
+ 			
+ 			<table class="table table-condensed ">
+ 				<tr>
+ 					<th>	WHEELS	</th>
+ 					<td>76-305 (16X3) Aluminium alloy</td>
+ 				</tr>
+ 				<tr> 	
+ 					<th>MAX SPEED</th>	
+ 					<td>24 kmph</td>
+ 				</tr>
+ 				<tr>
+ 					<th>RANGE</th>
+ 					<td>upto 65 kms</td>
+ 				</tr>
+ 				<tr>
+ 					<th>MOTOR</th>
+ 					<td>Hub Mounted BLDC 250W</td>
+ 				</tr>
+ 				<tr>
+ 					<th>BATTERIES	</th>
+ 					<td><p>48V 20 AH, Lead Acid, Sealed Maintenance Free (SMF), Rechargeable</p></td>
+ 				</tr>
+ 				<tr>
+ 					<th>CHARGER	</th>
+ 					<td>220 AC/48 V DC</td>
+ 				</tr>
+ 				<tr>
+ 					<th>CHARGING TIME	</th>
+ 					<td>6-8 Hours</td>
+ 				</tr>
+ 				<tr>
+ 					<th>RATED LOAD	</th>
+ 					<td>120 kg</td>
+ 				</tr>
+ 				<tr>
+ 					<th>SECURITY SYSTEM	</th>
+ 					<td>Mechanical locking & tamper proof Steering Lock , Electronic-Anti Theft Audio Alarm with Remote Control</td>
+ 				</tr>
+ 				<tr>
+ 					<th>COMPARTMENTS	</th>
+ 					<td>Spacious Storage Compartments</td>
+ 				</tr>
+
+ 			</table>
+ 		</div>
+ 		<button type="button" class="btn btn-lg" id="E-Scoot" onclick="showme(this);"> Book Online
+	</button>
+ </div><!--col end-->
+</div><!--row end  -->
+<!--========================================== E STAR ===============================================-->
+
+ <div class="row products">
+
+     <div class="col-sm-6 col-md-7 col-md-push-5 RTimg">
+ 		<img  alt="estar" src="img/Estar.png" width="600" height="544" class="img-responsive slide-right-1650"/>
+ 	</div>
+ 	
+ 	<div class="col-sm-6 col-md-5 col-md-pull-7 LText slide-left-1650">
+ 		<h3>E Star</h3>
+ 		<div class="table-responsive">
+
+ 			<table class="table table-condensed ">
+ 				<tr>
+ 					<th>SPEED</th>	
+ 					<td>Upto 55kmph</td>
+ 				</tr>
+ 				<tr>
+ 					<th>RANGE</th>	
+ 					<td>Upto 55 Kms</td>
+ 				</tr>
+ 				<tr>
+ 					<th>MOTOR</th>	
+ 					<td>BLDC Hub Motor 1100W</td>
+ 				</tr>
+ 				<tr>
+ 					<th>BATTERY	</th>
+ 					<td>48V 33AH, Lead Acid</td>
+ 				</tr>
+ 				<tr>
+ 					<th>CHARGER</th>	
+ 					<td>DC 48 V , 5A</td>
+ 				</tr>
+ 				<tr>
+ 					<th>WHEEL SIZE</th>	
+ 					<td>3.00-10</td>
+ 				</tr>
+ 				<tr>
+ 					<th>PAY LOAD CAPACITY</th>	
+ 					<td>120 kgs</td>
+ 				</tr>
+ 				<tr>
+ 					<th>CHARGING TIME</th>	
+ 					<td>6-8 Hours</td>
+ 				</tr>
+
+ 			</table>
+ 		</div> <!--responsive table end-->
+
+         <button type="button" class="btn btn-lg" id="E-Star" onclick="showme(this);">  Book Online
+	     </button>
+ 	</div><!--col end  -->
+
+ 	
+ </div><!-- e star row end -->
+
+<!--==================================== E-LITE ================================================-->
+
+ <div class="row products">
+
+ 	<div class="col-md-7 LTimg">
+ 		<img alt="elite" src="img/E-LITE-BIKE.png" class="img-responsive slide-left-2300"/>
+ 	</div>
+
+ 	<div class="col-md-5 RTtext slide-right-2300">
+ 		<h3>E Lite</h3>
+ 		<div class="table-responsive">
+ 			<table class="table table-condensed ">
+ 				<tr>
+ 					<th>DRIVE</th>
+ 					<td>Triple Mode: Power, Manual, Motor & Pedal Assist</td>
+ 				</tr> 	
+ 				<tr>
+ 					<th>WHEELS</th>
+ 					<td>F54-305(16X2.125) R 54-355(18X2.125) Aluminium Alloy</td>
+ 				</tr>
+
+ 				<tr>
+ 					<th>MAX SPEED	</th>
+ 					<td>24 kmph</td>
+ 				</tr>
+ 				<tr>
+ 					<th>RANGE	</th>
+ 					<td>upto 50 kms</td>
+ 				</tr>
+ 				<tr>
+ 					<th>MOTOR	</th>
+ 					<td>BLDC 230W, Geared Wheel Integrated</td>
+ 				</tr>
+ 				<tr>
+ 					<th>BATTERIES	</th>
+ 					<td>48V 12 AH, LA Sealed Maintenance Free Rechargeable</td>
+ 				</tr>
+ 				<tr>
+ 					<th>CHARGER	</th>
+ 					<td>220 AC/48 V DC</td>
+ 				</tr>
+ 				<tr>
+ 					<th>CHARGING TIME	</th>
+ 					<td>4-8 Hours</td>
+ 				</tr>
+ 				<tr>
+ 					<th>RATED LOAD	</th>
+ 					<td>80 kgs</td>
+ 				</tr>
+
+ 			</table>
+ 		</div><!--responsive div end-->
+		<button type="button" class="btn btn-lg" id="E-Lite" onclick="showme(this);"> Book Online
+	</button>
+ 	</div> <!--col end -->
+ </div><!-- row elite end -->
+
+<!--======================================= EBIKE VX =================================================-->
+
+ <div class="row products">
+
+		<div class="col-sm-6 col-md-7 col-md-push-5 RTimg">
+			<img alt="ebike" src="img/ebikeVX.png"  width="600" height="414" class="img-responsive slide-right-2920" /><!-- style="padding-top:70px -->
+		</div>
+
+ 	<div class="col-sm-6 col-md-5 col-md-pull-7 LText slide-left-2920">
+ 		<h3>E Bike VX</h3>
+ 		<div class="table-responsive">
+ 			<table class="table table-condensed ">
+ 				<tr>
+ 					<th>DRIVE</th>
+ 					<td>Triple Mode: Power, Manual, Motor & Pedal Assist</td>
+ 				</tr> 	
+				<tr>
+ 					<th>WHEELS	</th>
+ 					<td>47-456(22 x 1.75)</td>
+ 				</tr>
+ 				<tr>
+ 					<th>MAX SPEED	</th>
+ 					<td>23 kmph</td>
+ 				</tr>
+ 				<tr>
+ 					<th>RANGE	</th>
+ 					<td>upto 40 kms</td>
+ 				</tr>
+ 				<tr>
+ 					<th>MOTOR	</th>
+ 					<td>BLDC 220W</td>
+ 				</tr>
+ 				<tr>
+ 					<th>BATTERIES	</th>
+ 					<td>36V 12 AH, LA Sealed Maintenance Free Rechargeable</td>
+ 				</tr>
+ 				<tr>
+ 					<th>CHARGER	</th>
+ 					<td>220 AC/36 V DC</td>
+ 				</tr>
+ 				<tr>
+ 					<th>CHARGING TIME</th>
+ 					<td>4-8 Hours</td>
+ 				</tr>
+
+
+ 				<tr>
+ 					<th>RATED LOAD</th>
+ 					<td>70 kg</td>
+ 				</tr>
+			</table>	
+		</div><!--responsive table div end-->
+		<button type="button" class="btn btn-lg" id="E-BikeVX" onclick="showme(this);"> Book Online
+	</button>
+
+	</div> <!--ebikeVX col-5 end-->
+
+ 			
+</div><!--  row ebikeVX end-->
+
+<!--=================================== E MATE =======================================================-->
+
+<div class="row products">
+
+	<div class="col-md-7 LTimg">
+		<img alt="emate" src="img/E-mate.png"  width="600" height="500" class="img-responsive slide-left-3600"/>
+	</div>
+
+	<div class="col-md-5 RTtext  slide-right-3600">
+		<div class="table-responsive">
+			<h3>E Mate</h3>
+			<table class="table table-condensed ">
+				<tr> <th>	WHEELS	</th>
+					<td>76-305 (16X3)</td>
+				</tr>
+
+				<tr><th>MAX SPEED</th>
+					<td>24 kmph RANGE: upto 65 kms</td>
+				</tr>
+
+				<tr><th>MOTOR</th>	
+					<td>Hub Mounted BLDC 250W</td>
+				</tr>
+
+				<tr><th>BATTERIES</th>
+					<td>48V 20 AH, Lead Acid, Sealed Maintenance Free (SMF), Rechargeable</td>
+				</tr>
+
+				<tr><th>CHARGER	</th>
+					<td>220 AC/48 V DC</td>
+				</tr>
+
+				<tr><th>CHARGING TIME</th>	
+					<td>6-8 Hours</td>
+				</tr>
+
+				<tr><th>RATED LOAD</th>	
+					<td>120 kgs</td>
+				</tr>
+
+				<tr><th>SECURITY SYSTEM</th>	
+					<td>Mechanical locking & tamper proof Steering Lock , Electronic-Anti Theft Audio Alarm with Remote Control</td>
+				</tr>
+
+				<tr><th>COMPARTMENTS	</th>
+					<td>Spacious Storage Compartments</td>
+				</tr>
+			</table>
+		</div><!--responsive table col end-->
+		<button type="button" class="btn btn-lg" id="E-Mate" onclick="showme(this);"> Book Online
+	</button>
+	</div><!-- col-5 end-->
+</div><!--emate row end-->
+
+<!--====================================== E PLUS ====================================================-->
+
+<div class="row products">
+
+    <div class="col-sm-6 col-md-7 col-md-push-5 RTimg">
+		<img alt="eplus" src="img/E-Plus.png"  width="600" height="417" class="img-responsive slide-right-4160"/> <!-- style="padding-top:70px" -->
+	</div>
+
+	<div class="col-sm-6 col-md-5 col-md-pull-7 LText slide-left-4160 ">
+		<h3>E Plus</h3>
+		<div class="table-responsive">
+
+			<table class="table table-condensed ">
+				<tr>
+					<th>BATTERIES		</th>
+					<td>48V 12 AH Sealed maintenance Free, Rechargeable </td>
+				</tr>
+
+				<tr> <th>	CHARGER	</th>
+					<td> AC220V/ 48 VDC, full charge time 6-8 hour</td>
+				</tr>
+				<tr> 
+					<th>CHARGING TIME	</th>
+					<td>4-8 hours </td>
+				</tr>
+				<tr>
+					<th>DISPLAY BOARD	</th>
+					<td> Power On /Off Battery Status, Speedometer, Indicator Flasher L.& R.</td>
+				</tr>
+				<tr> <th>DRIVE	</th>
+					<td>Triple mode power, Manual, MOTOR & pedal assisted
+					</td>
+				</tr>
+				<tr>
+					<th>MAX SPEED	</th>
+					<td> 24 Kmph</td>
+				</tr>
+				<tr> 
+					<th>MOTOR</th>
+					<td>230W geared</td>
+				</tr>
+				<tr> 
+					<th>RANGE	</th>
+					<td> 50 kms. Between charges</td>
+				</tr>
+				<tr> <th>	RATED LOAD	</th>
+					<td>80 Kg</td>
+				</tr>
+			</table>
+		</div> <!--responsive end-->
+		<button type="button" class="btn btn-lg" id="E-Plus" onclick="showme(this);"> Book Online
+	</button>
+	</div><!--col-5 end-->
+	
+</div><!--eplus row end-->
+
+<!--====================================== E Rickshaw ====================================================-->
+
+<div class="row products">
+
+	<div class="col-md-7 LTimg">
+		<img alt="rickshaw" src="img/rickshaw.png"  width="600" height="374" class="img-responsive slide-left-4780"/> <!-- style="padding-top:70px" -->
+	</div>
+
+	<div class="col-md-5 RTtext slide-right-4780">
+		<div class="table-responsive">
+			<h3>E Rickshaw</h3>
+			<table class="table table-condensed ">
+				<tr> <th>	WHEELS	</th>
+					<td>76-305 (16X3)</td>
+				</tr>
+
+				<tr><th>MAX SPEED</th>
+					<td>24 kmph RANGE: upto 65 kms</td>
+				</tr>
+
+				<tr><th>MOTOR</th>	
+					<td>Hub Mounted BLDC 250W</td>
+				</tr>
+
+				<tr><th>BATTERIES</th>
+					<td>48V 20 AH, Lead Acid, Sealed Maintenance Free (SMF), Rechargeable</td>
+				</tr>
+
+				<tr><th>CHARGER	</th>
+					<td>220 AC/48 V DC</td>
+				</tr>
+
+				<tr><th>CHARGING TIME</th>	
+					<td>6-8 Hours</td>
+				</tr>
+
+				<tr><th>RATED LOAD</th>	
+					<td>120 kgs</td>
+				</tr>
+
+				<tr><th>SECURITY SYSTEM</th>	
+					<td>Mechanical locking & tamper proof Steering Lock , Electronic-Anti Theft Audio Alarm with Remote Control</td>
+				</tr>
+
+				<tr><th>COMPARTMENTS	</th>
+					<td>Spacious Storage Compartments</td>
+				</tr>
+			</table>
+		</div><!--responsive table col end-->
+		<button type="button" class="btn btn-lg" id="E-Rickshaw" onclick="showme(this);"> Book Online
+	</button>
+	</div><!-- col-5 end-->
+</div> <!-- e rickshaw row end -->
+
+
+<!-- =====================Battries =========================== -->
+
+
+<div class="row products">
+
+    <div class="col-sm-6 col-md-7 col-md-push-5 RTimg slide-right-5360">
+		<img  alt="battries" src="img/battrie.png"  width="260" height="239" class="img-responsive ebattries "/>
+	</div>
+
+	<div class="col-sm-6 col-md-5 col-md-pull-7 LText slide-left-5360">
+		<h3>E Battries</h3>
+		
+           <div>
+			<p class="ebatriDetail">Backed by our team of dexterous professionals,we have emerged as a trusted Supplier of <b>E Bike Battery</b> from Maharashtra. The E Bike Batteries we make available features sealed and leak proof construction.Our E Bike Batteries come with safety valve regulated systems. Few words that better describe our E Bike Battery are environment-friendly, maintenance-free operation, high durability.Bulk orders of the E Bike Battery are delivered by us.  </p> 
+		 </div> <!-- end -->
+		<button type="button" class="btn btn-lg" id="Battries" onclick="showme(this);"> Book Online
+	</button>
+	</div><!--col-5 end-->
+	
+</div><!--e battries row end-->
+
+
+
+
+
+
+
+<!-- <div style="height:700px"></div>  -->
+</div><!--container close-->
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+	<p> 
+	    CONTACT US:	</p>
+	<br>
+	<p> Ph:9923494751, 0724-2421129, 2421130<br><a href="mailto:shreeebike@gmail.com " style="color: rgba(3,2,18,1);hover:#222;">shreeebike@gmail.com</a> </p>
+		       <address> address: Shree Automobiles,<br>
+	                             Nagpuri jin compound,<br>
+	                             Old cotton market,<br>
+	                             Akola.<br>Maharashtra, INDIA. </address>
+	        </div> <!--col-3 end-->
+	        <div class="col-sm-6 col-md-9">
+	        	<div class="multiMap">
+	        		<iframe  src="https://www.google.com/maps/d/embed?mid=11aZGqH1kNBqyTYSVaywsvpka-cM" width="700" height="300" style="border:0px;margin-right:0px;padding-left:50px;"></iframe>
+	        	</div>
+	        </div>
+	    </div> <!--row end-->
+	   <div class="row">  
+	       <h5 style="padding-left:13px;">Our Branches:</h5>               
+	  <div class="col-sm-6 col-md-3">
+
+	  	<h5>Hydrabad</h5>
+	  	<p> Ph:9848914910, 9246154910<br><a href="mailto:shreeebike@gmail.com" style="color: rgba(3,2,18,1);">shriamarshaktienterprises@gmail.com</a> </p>
+		       <address> address: Shri Amar Shakti Automobiles,<br>
+	                             Shop no.5 Prashant Nagar,<br>
+	                            
+	                             Moosarambagh, Malakpet<br>Hyderabad, INDIA. </address>
+	  </div> 
+	  <div class="col-sm-6 col-md-3"><h5>Nagpur</h5>
+	  	<p> Ph:0724-2421129,2421130<br><a href="mailto:shreeebike@gmail.com" style="color: rgba(3,2,18,1);">shreeebike@gmail.com</a> </p>
+		       <address> address: Shree Automobiles,<br>
+	                             Nagpuri jin compound,<br>
+	                             Akola.<br>Maharashtra, INDIA. </address>
+	  </div> 
+	  <div class="col-sm-6 col-md-3"><h5>Amravati</h5>
+	  	<p> Ph:9823237751, 0721-2562567,<br><a href="mailto:shreeebike@gmail.com" style="color: rgba(3,2,18,1);">shreeebike@gmail.com</a> </p>
+		       <address> address: Shree Automobiles,<br>
+	                             Rukhmini Nagar, near someshwar margdarshan kendra,<br>infront of SBI,<br>
+	                             Amravati.<br>Maharashtra, INDIA. </address>
+	  </div> 
+	  <div class="col-sm-6 col-md-3"><h5>Khandawa</h5>
+	  	<p> Ph:9644167777, 9098987795<br><a href="mailto:shreeebike@gmail.com " style="color: rgba(3,2,18,1);">shreeebike@gmail.com</a> </p>
+		       <address> address: Ashtavinayak Automobiles,<br>
+	                             20 Pawada near hanuman temple,<br>
+	                             Khandwa.<br>MP, INDIA. </address>
+	  </div>                           
+	   </div>
+	   
+  </div>  
+     
+
+
+</footer>
+<footer>
+	<div style="text-align:center;background-color:rgba(3,2,18,1);padding:10px;color:#ccc"><small>Design & Develop by Rashmi Choube.&nbsp;    Copyright &#169; 2016 Shree Automobiles</small></div>
+</footer>
+</body>
+</html>
